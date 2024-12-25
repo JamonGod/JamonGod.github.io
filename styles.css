@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #ffd1dc, #ffe8cc); /* Rosado menta y amarillo pastel */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+div.title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: rgba(255, 200, 220, 0.9); /* Fondo rosado pastel */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: #6b3e5d; /* Texto oscuro para contraste */
+}
+
+div.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco translúcido */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    align-items: stretch; /* Estira elementos para igualar el tamaño */
+    margin-top: 20px;
+}
+
+div.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Asegura que tenga el mismo alto que el texto */
+}
+
+div.photo img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 736px;
+    height: 100%; /* Ajusta la altura para que coincida */
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+}
+
+div.text {
+    background-color: rgba(255, 240, 245, 0.7); /* Rosado muy claro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Asegura que el cuadro de texto sea del mismo tamaño */
+    overflow-y: auto; /* Añade desplazamiento si el texto es demasiado largo */
+}
+
+div.text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #6b3e5d; /* Texto oscuro */
+}
+
+div.spotify-links {
+    background-color: rgba(255, 240, 245, 0.7); /* Rosado muy claro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+    grid-column: span 2; /* Hace que los enlaces ocupen todo el ancho */
+}
+
+div.spotify-links h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #6b3e5d;
+}
+
+div.spotify-links a {
+    display: block;
+    font-size: 1rem;
+    color: #6b3e5d;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: color 0.3s;
+}
+
+div.spotify-links a:hover {
+    color: #ff9aa2; /* Color rosado suave al hacer hover */
+}
+
+div.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: rgba(255, 230, 240, 0.8); /* Fondo pastel */
+    border-radius: 10px;
+    color: #6b3e5d;
+}
+
+div.footer a {
+    color: #ff9aa2;
+    text-decoration: none;
+}
+
+div.footer span {
+    display: block;
+    margin-top: 5px;
+}
