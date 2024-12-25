@@ -35,7 +35,7 @@ div.container {
     width: 100%;
     max-width: 1200px;
     box-sizing: border-box;
-    align-items: stretch; /* Estira elementos para igualar el tamaño */
+    align-items: start;
     margin-top: 20px;
 }
 
@@ -43,15 +43,14 @@ div.photo {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%; /* Asegura que tenga el mismo alto que el texto */
 }
 
 div.photo img {
     border-radius: 10px;
     width: 100%;
     max-width: 736px;
-    height: 100%; /* Ajusta la altura para que coincida */
-    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+    height: auto;
+    object-fit: contain;
 }
 
 div.text {
@@ -60,7 +59,6 @@ div.text {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     height: 100%; /* Asegura que el cuadro de texto sea del mismo tamaño */
-    overflow-y: auto; /* Añade desplazamiento si el texto es demasiado largo */
 }
 
 div.text p {
@@ -116,4 +114,35 @@ div.footer a {
 div.footer span {
     display: block;
     margin-top: 5px;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    div.container {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        gap: 10px;
+        padding: 20px;
+    }
+
+    div.photo img {
+        max-width: 100%;
+    }
+
+    div.text {
+        padding: 15px;
+    }
+
+    div.spotify-links {
+        margin-top: 15px;
+        padding: 15px;
+    }
+
+    div.title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    body {
+        padding: 10px;
+    }
 }
